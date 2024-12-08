@@ -20,6 +20,7 @@ if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY is not set in the environment variables")
 
 # Global variables
+LINK_OKX_BASE = "https://www.okx.com"
 LINK_OKX_NEWS = "https://www.okx.com/help/category/announcements"
 LINK_OKX_NEWS_PAGE = "https://www.okx.com/help/section/announcements-latest-announcements/page/"
 MAX_SCROLLS = 10
@@ -32,6 +33,14 @@ SYSTEM_PROMPT = (
     "You are an intelligent assistant capable of analyzing visual content from website screenshots. "
     "Your role is to extract meaningful and structured information such as titles, dates, and text content from the provided visual input. "
     "Focus on providing accurate results while maintaining the original structure and details visible in the image."
+    "Download OKX app for iOS, Android, macOS, and Windows"
+    "Never add next items to the text: "
+    "- Follow us on X (formerly Twitter) "
+    "- Join us on Telegram "
+    "- Join us on Discord "
+    "- Subscribe to our channel on YouTube "
+    "- Join other OKX global communities "
+    "it is links to the website, not the text of the links."
 )
 
 USER_PROMPT = (
