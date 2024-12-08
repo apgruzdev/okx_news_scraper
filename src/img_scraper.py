@@ -125,11 +125,11 @@ def analyse_content(base64_image: str,
         raise e
 
 
-if __name__ == "__main__":
-    url_to_capture = "https://www.okx.com/help/web3"
-    # url_to_capture = "https://www.okx.com/help/okx-will-support-the-wise-monkey-monky-airdrop-for-apecoin-ape-and-floki"
-    screenshot_base64 = download_website(url_to_capture)
-    analysis = analyse_content(screenshot_base64)
-    for k, v in analysis.items():
-        print(f"{k}: {v}")
-    LOGGER.info("Script completed successfully")
+# if __name__ == "__main__":
+#     url_to_capture = "https://www.okx.com/help/web3"
+#     # url_to_capture = "https://www.okx.com/help/okx-will-support-the-wise-monkey-monky-airdrop-for-apecoin-ape-and-floki"
+#     screenshot_base64 = download_website(url_to_capture)
+#     analysis = analyse_content(screenshot_base64)
+#     for k, v in analysis.items():
+#         print(f"{k}: {v}")
+#     LOGGER.info("Script completed successfully")
