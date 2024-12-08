@@ -17,6 +17,7 @@ beautifulsoup4 = "*"
 pandas = "*"
 tqdm = "*"
 python-dotenv = "*"
+requests = "*"
 
 [requires]
 python_version = "3.13"

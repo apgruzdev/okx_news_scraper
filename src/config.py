@@ -21,7 +21,12 @@ if not OPENAI_API_KEY:
 
 # Global variables
 LINK_OKX_NEWS = "https://www.okx.com/help/category/announcements"
+LINK_OKX_NEWS_PAGE = "https://www.okx.com/help/section/announcements-latest-announcements/page/"
+MAX_SCROLLS = 10
+MAX_PAGES = 3
+
 OPENAI_CLIENT = OpenAI(api_key=OPENAI_API_KEY)
+MAX_TOKENS = 10000
 
 SYSTEM_PROMPT = (
     "You are an intelligent assistant capable of analyzing visual content from website screenshots. "

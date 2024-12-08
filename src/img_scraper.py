@@ -5,8 +5,7 @@ import tempfile
 import json
 
 from config import (LOGGER, MAX_SCROLLS,
-                    OPENAI_CLIENT, SYSTEM_PROMPT, USER_PROMPT, MAX_TOKENS,
-                    LINK_OKX_NEWS)
+                    OPENAI_CLIENT, SYSTEM_PROMPT, USER_PROMPT, MAX_TOKENS)
 from selenium import webdriver
 import base64
 from PIL import Image
